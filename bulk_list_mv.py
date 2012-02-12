@@ -29,6 +29,7 @@ buckets_o_friends = [friends_list[i:i+400] for i in range(0, len(friends_list), 
 for l in buckets_o_friends:
     print len(l)
 
+# Put the friends on a list
 fails = []
 for i,friend_list in enumerate(buckets_o_friends):
 
@@ -42,4 +43,5 @@ for i,friend_list in enumerate(buckets_o_friends):
             print '%i failed' % friend
             fails.append(friend)
 
+# Print out an ids which didn't get transfered
 print 'errors: ', fails
